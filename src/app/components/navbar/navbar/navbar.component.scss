@@ -1,0 +1,32 @@
+.logo{
+    margin: 2rem;
+}
+.primary-header{
+    align-items: center;
+    justify-content: space-between;
+}
+.primary-navigation{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+.primary-navigation a{
+    text-decoration: none;
+}
+.primary-navigation a > [aria-hidden="true"]{
+    font-size: 700;
+    margin-inline-end: 0.75em;
+}
+@media (max-width:35em) {
+    .primary-navigation{
+        position: fixed;
+        inset: 0,0,0,30%;
+        background: #fff;
+        z-index: 1;
+        flex-direction: column;
+        padding: min(30vh, 10rem) 2em;
+        background: hsl(0, 0%, 100% /0.1%);
+    }
+    
+}

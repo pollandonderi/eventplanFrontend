@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+:root {
+    --colordominant: #39cdcc;
+    --colorheading: #213f7d;
+    --colortext: #545f7d;
+    --font-family: "Avenir Next";
+  }
+ 
+.start{
+    background-image: url("/assets/alternative-back.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+justify-content: center;
+align-items: center;
+position:relative;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(66, 65, 65, 0.3);
+}
+.middle{
+    z-index: 1;
+    text-transform: uppercase;
+    color: #ffff;
+    font-family: 'Avenir Next';
+font-style: normal;
+font-weight: 600;
+letter-spacing: 0.1em;
+.middle2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+}
+#primarylogin{
+    z-index: 1;
+}
+.mainholder{
+    z-index: 1;
+}
+.mainholder{
+    display: flex;
+    margin: 2em;
+    gap: 1em;
+    align-content: center;
+    justify-content: center;
+}
