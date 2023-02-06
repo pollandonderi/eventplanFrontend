@@ -1,0 +1,39 @@
+#rectangle{
+    width: 14.2rem;
+    aspect-ratio: 14/8;
+}
+.main{
+    margin-inline: auto;
+    display: grid; 
+    max-width: 80%;  
+}
+.card{
+    gap: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    border-radius: 25px;
+    margin: 1rem;
+    color: #fff;
+}
+#explanation{
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.moreprojectsbutton{
+    margin-inline: auto;
+    
+}
+
+@media (min-width:55em) {
+
+    .main{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+        // max-width: 80%;
+    }
+}

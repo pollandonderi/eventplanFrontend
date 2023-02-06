@@ -8,6 +8,8 @@ import { SecondarybuttonComponent } from './components/secondarybutton/secondary
 import { NavbarComponent } from './components/navbar/navbar/navbar.component';
 import { LoginComponent } from './components/login/login.component';
 import { CardComponent } from './components/card/card.component';
+import { CardseventsComponent } from './components/cardsevents/cardsevents.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { CardComponent } from './components/card/card.component';
     SecondarybuttonComponent,
     NavbarComponent,
     LoginComponent,
-    CardComponent
+    CardComponent,
+    CardseventsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
