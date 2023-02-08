@@ -1,0 +1,39 @@
+.registerfolder{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 4rem;
+    max-width: 20rem;
+    padding-block: 0.5rem;
+}
+.registerinput{
+    margin-block: .4rem;
+border: 0;
+border-bottom: 2px solid #39cdcc;
+padding: .4rem;
+}
+#registersubmitbutton{
+    background-color: #39cdcc;
+    padding-block: 0.4rem;
+    padding-inline: 4rem;
+    border-radius: 25px
+}
+.space{
+    margin-top: .9rem;
+}
+@media (min-width:60em) {
+ .holdingcontainer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+ }   
+ .imgcustomised{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+}
+@media (max-width:60em) {
+        
+.imgcustomised{
+    display: none;
+}
+}
