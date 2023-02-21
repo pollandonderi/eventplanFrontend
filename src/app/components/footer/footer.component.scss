@@ -9,13 +9,13 @@ padding: 1rem;
 #emailinput{
   border: 0;
   background-color: #39cdcc;
-  color: #0000;
+  color: black;
   border-bottom: 2px solid black;
   padding-inline: 2rem;
   padding-block: .4rem;
 }
-.imagefooter{
-  width: 3rem;
+#imagefooter{
+  width: 2rem;
 }
 .links{
       text-decoration:none;
@@ -49,6 +49,21 @@ padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.emailsend{
+  display: flex;
+  flex-direction: row;
+  color: #000;
+  
+}
+#imageemail{
+  display: flex;
+justify-content: center;
+align-items: center;
+background: white;
+border-radius: 20px;
+padding-inline: 1.3rem;
+cursor: pointer;
 }
 @media (min-width:35em) {
   .wrapper{

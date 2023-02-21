@@ -1,0 +1,129 @@
+.maincontainer{
+    display: grid;
+    
+}
+.miniholder{
+    display: flex;
+    flex-direction: row;
+    background: #39cdcc;
+    margin-block: 1rem;
+    border-radius: 20px;
+}
+#number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 1rem;
+}
+.holder2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.statistics{
+    display: flex;
+    flex-direction: row;
+    background: #39cdcc;
+    border-radius: 20px;
+    margin-top: 1rem;
+    color: black;
+}
+.statistics1{
+    display:flex;
+    padding-inline: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.maincontainercustomised{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#questionspad{
+    padding-inline: 2rem;
+}
+.questionsemail{
+    display: flex;
+    width: 18rem;
+    flex-direction: column;
+    padding-inline: auto;
+    // aspect-ratio: 1;
+    
+}
+.questionsemailcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#submitcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#submitcontainerbutton{
+    background-color: #39cdcc;
+    padding-inline: auto;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 1rem;
+    cursor: pointer;
+}
+#submitcontainerbutton:hover{
+    background: #333;
+    color: #ffff;
+    transition: 2s ease-out;
+
+}
+.customised{
+    background: #39cdcc;
+}
+.second-svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wordsfirst{
+    margin-block: 1rem;
+    margin-inline: 1rem;
+}
+#expertsexplain{
+    background-color: #fff;
+    
+    padding-inline: 1rem;
+    padding-block: .8rem;
+    color: #333;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+}
+#images{
+    width: 70%;
+    height: 20rem;
+}
+
+.bg-dark{
+    background: #333;
+    color: #fff;
+}
+#m{
+    padding-inline: 1rem;
+}
+@media (min-width:60em) {
+    .maincontainer{
+        grid-template-columns: repeat(2,1fr);   
+    }
+    #questionspad{
+        padding-inline: 17rem;
+    }
+    
+}
+@media (max-width:60em) {
+    #images{
+        width: 85%;
+        height: 20rem;
+    }
+}

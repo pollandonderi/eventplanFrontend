@@ -1,6 +1,8 @@
 #rectangle{
-    width: 14.2rem;
-    aspect-ratio: 14/8;
+    width: 11.2rem;
+    aspect-ratio: 8/8;
+    border-radius: 50%;
+margin-top: 1rem;
 }
 .main{
     margin-inline: auto;
@@ -23,6 +25,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-inline: 2rem;
 }
 .moreprojectsbutton{
     margin-inline: auto;
