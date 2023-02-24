@@ -1,3 +1,11 @@
+
+$clr-primary:#ED254E;
+$clr-secondary:#011936;
+$clr-tertiary:#465662;
+$clr-clear:#C2EABD;
+$clr-yeellow:#f9dc5c;
+
+
 body{
   overflow-x: hidden;
 }
@@ -6,7 +14,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.flex{
+.flex{                       
 display: flex;
 gap: var(--gap, 1rem);    
 }

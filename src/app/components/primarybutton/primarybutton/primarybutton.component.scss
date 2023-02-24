@@ -1,6 +1,8 @@
+
 #primarylogin{
     z-index: 1;
-background: #39CDCC;
+background: var($clr-primary);
+// background: #ED254E;
 border-radius: 25px;
 
 padding-inline: 2rem;
