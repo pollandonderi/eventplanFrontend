@@ -1,0 +1,54 @@
+.maincontainer{
+    background-color: #011936;
+}
+.text-white{
+    color: #ffff;
+}
+.catalogue-images{
+    height: 15rem;
+    border-radius: 5%;
+    padding-block: 1rem;
+    margin-inline: 1rem;
+}
+.img1{
+    background: url("/assets/event1.jpg");
+    background-size: cover;
+}
+.img2{
+    background: url("/assets/event2.jpg");
+    background-size: cover;
+}
+.img3{
+    background: url("/assets/event3.jpg");
+    background-size: cover;
+}
+.img4{
+    background: url("/assets/event4.jpg");
+    background-size: cover;
+}
+.paragraph{
+    padding-inline: 5rem;
+
+}
+.marg{
+    padding-bottom: 1.5rem;
+}
+@media (min-width:35em) {
+    .picture-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+
+       
+    }
+    .catalogue-images{
+       margin-block: 1rem;
+    }
+}
+@media (max-width:35em) {
+    .catalogue-images{
+    margin-block:1rem ;
+    padding-inline: .5rem;
+    }
+}

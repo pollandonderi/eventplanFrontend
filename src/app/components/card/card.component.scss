@@ -3,6 +3,7 @@
     // grid-template-columns: repeat(3, 1fr) ;
     gap: 1rem;
     transform: translateY(-2%);
+    padding-inline: 1rem;
 
 }
 .card-columns{
@@ -11,20 +12,21 @@
     gap: .5rem;
     background-color: #fff;
     box-shadow: 5px 5px 5px  rgb(185, 184, 184);
-    border-radius: 20px;
+    border-radius: 0px 40px 0px 40px;
     justify-content: center;
 }
 #image-shrink{
-    width: 5rem;
+    width: 100%;
     aspect-ratio: 1;
     margin:13px;
-    height: 80%;
+    // height: 100%;
 }
 @media (min-width:35em) {
     .card-display-even{
         grid-template-columns:  repeat(2, 1fr);
         transform: translateY(-2%);
     }
+
     
 }
 @media (min-width:60em) {

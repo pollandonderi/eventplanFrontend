@@ -1,0 +1,61 @@
+@import 'src/styles.scss';
+.body{
+    color: #fff;
+}
+.footerdisplay{
+    display: flex;
+    flex-direction: column;
+
+}
+.maincontainer{
+    display: grid;
+    
+    background: $clr-secondary;
+    border-top: 2px solid #fff;
+}
+.col1{
+    grid-column: span 2;
+    // padding-left: 2rem;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    padding-block: 1rem;
+}
+a:hover{
+    color: $clr-primary;
+}
+.pad{
+    padding-block: 1rem;
+}
+.column{
+    color: #fff;
+    padding-left: 3rem;
+}
+.social-networks{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+.column-customised{
+    padding-left: 3rem;
+    color:#fff;
+
+}
+.call-customised{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width:35em) {
+    .maincontainer{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+    }
+}
+@media (max-width:60em) {
+    .maincontainer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}

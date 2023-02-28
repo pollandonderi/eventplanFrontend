@@ -15,6 +15,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { MerchandiseComponent } from './components/merchandise/merchandise.component';
 import { WhatexpectedComponent } from './whatexpected/whatexpected.component';
+import { GetinspiredComponent } from './getinspired/getinspired.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { WhatexpectedComponent } from './whatexpected/whatexpected.component';
     RegisterComponent,
     AboutusComponent,
     MerchandiseComponent,
-    WhatexpectedComponent
+    WhatexpectedComponent,
+    GetinspiredComponent
   ],
   imports: [
     BrowserModule,

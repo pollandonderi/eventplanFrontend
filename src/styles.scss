@@ -4,8 +4,29 @@ $clr-secondary:#011936;
 $clr-tertiary:#465662;
 $clr-clear:#C2EABD;
 $clr-yeellow:#f9dc5c;
+$font-family:'proxima-nova';
+$gradients:linear-gradient(90deg, rgba(249,220,92,1) 1%, rgba(194,234,189,1) 18%, rgba(70,86,98,1) 47%, rgba(1,25,54,1) 88%) ;
 
-
+@font-face {
+  font-family: 'MyFont';
+  src: url('./assets/Poppins/semibold.ttf');
+}
+@font-face {
+  font-family: 'MyHeadingFont';
+  src: url('./assets/Poppins/regular.ttf');
+}
+@font-face {
+  font-family: 'MyTextFont';
+  src: url('./assets/Poppins/extralight.ttf');
+}
+@font-face {
+  font-family: 'MyTextFont';
+  src: url('./assets/Poppins/extralight.ttf');
+}
+@font-face {
+  font-family: 'MyQuoteFont';
+  src: url('./assets/Poppins/mediumitalic.ttf');
+}
 body{
   overflow-x: hidden;
 }
@@ -13,6 +34,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .flex{                       
 display: flex;
@@ -26,6 +48,7 @@ gap: var(--gap, 1rem);
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 #headings{
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -69,4 +92,47 @@ gap: var(--gap, 1rem);
 }
 #svg{
   width: 18rem;
+}
+.overall-headings{
+  font-size: xx-large;
+  font-weight: 900;
+  line-height: normal;
+  font-family: MyFont;
+}
+.primary-button{
+  background-color:$clr-primary;
+  text-transform: uppercase;
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+  text-decoration: none;
+  color: #000;
+  margin-inline: auto;
+  border-radius: 25px;
+}
+.primary-button:hover{
+  background-color: $clr-tertiary;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  margin-inline: auto;
+  border-radius: 25px;
+  border: 1px solid $clr-primary;  
+  transition: 2s ease-out;
+}
+.fonts{
+  font-family: MyFont;
+}
+.quote{
+  font-family: MyQuoteFont;
+  padding-inline: 1.5rem;
+}
+.paddingconst{
+  padding-block: 1rem;
+}
+@media (max-width:50em) {
+  .overall-headings{
+    font-size: x-large;
+    font-weight: 900;
+    line-height: normal;
+  }
 }

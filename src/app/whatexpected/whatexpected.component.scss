@@ -1,0 +1,93 @@
+@import '/src/styles.scss';
+.imgwhatexpected{
+    width: 7rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: black;
+}
+.h1{
+    font-size: x-large;
+}
+.h2{
+    font-size: large;
+}
+.maincontainer{
+    display: flex;
+    flex-direction: row;
+    padding-inline: 1rem;
+    padding-top: .5rem;
+    .imgwhatexpected2{
+        width: 7rem;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background-color: #fff;
+       
+    }
+}
+.secondmaincontainer{
+    padding-bottom: 1rem;
+    padding-inline: 2rem;
+}
+.paragraph{
+    font-size: medium;
+    // font-weight: 300;
+    font-family: MyTextFont;
+}
+.marg1{
+    padding: 1rem;
+}
+.wrapper1{
+    background-color: $clr-yeellow;
+    border-radius: 20px;
+}
+.wrapper2{
+    background-color: $clr-secondary;
+    color: white;
+    border-radius: 20px;
+
+}
+.wrapper3{
+    background: $clr-tertiary;
+    color: white;
+    border-radius: 20px;
+
+}
+.wrapper4{
+    background: $clr-clear;
+    color: black;
+    border-radius: 20px;
+
+}
+.wrapper5{
+    background: $gradients;
+    color: black;
+    border-radius: 20px;
+
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.article{
+    display: grid;
+    gap: 2rem;
+    // grid-template-columns: repeat(4, 1fr);
+}
+
+
+@media (min-width:50em) {
+    .grid-col-span2{
+        grid-column: span 2;
+    }
+    .article{
+
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .wrappers:last-child{
+        grid-column-start: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+}
