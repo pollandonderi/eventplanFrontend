@@ -1,14 +1,37 @@
+@import 'src/styles.scss';
+
+.miniholder{
+    display: flex;
+    flex-direction: row;
+    margin-block: 1rem;
+    border-radius: 20px;
+    color: #fff;
+}
+.colorminiholder1{
+background: $clr-yeellow;
+color: black;
+}
+.colorminiholder2{
+background: $clr-tertiary;
+}
+.colorminiholder3{
+background: $clr-secondary;
+}
+
+
+
+
+
+
+
+
+
+
 .maincontainer{
     display: grid;
     
 }
-.miniholder{
-    display: flex;
-    flex-direction: row;
-    background: #39cdcc;
-    margin-block: 1rem;
-    border-radius: 20px;
-}
+
 #number{
     display: flex;
     justify-content: center;

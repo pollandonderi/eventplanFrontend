@@ -27,6 +27,10 @@ $gradients:linear-gradient(90deg, rgba(249,220,92,1) 1%, rgba(194,234,189,1) 18%
   font-family: 'MyQuoteFont';
   src: url('./assets/Poppins/mediumitalic.ttf');
 }
+.mainbody{
+  margin: 0;
+  padding: 0;
+}
 body{
   overflow-x: hidden;
 }
@@ -61,29 +65,7 @@ gap: var(--gap, 1rem);
   justify-content: center;
   align-items: center;
 }
-#seebutton{
-  background-color: #39cdcc;
-  text-transform: uppercase;
-  padding-inline: 2rem;
-  padding-block: 0.2rem;
-  text-decoration: none;
-  color: #000;
-  margin-inline: auto;
-  border-radius: 25px;
-  border: 1px solid #39cdcc;  
-}
-#seebutton:hover{
-  background-color: #fffc;
-  text-transform: uppercase;
-  padding-inline: 2rem;
-  padding-block: 0.2rem;
-  text-decoration: none;
-  color: #000;
-  margin-inline: auto;
-  border-radius: 25px;
-  border: 1px solid #39cdcc;  
-  transition: 2s ease-out;
-}
+
 .centercustomised{
   display: flex;
   flex-direction: column;
@@ -111,13 +93,9 @@ gap: var(--gap, 1rem);
 }
 .primary-button:hover{
   background-color: $clr-tertiary;
-  text-transform: uppercase;
-  text-decoration: none;
   color: #fff;
-  margin-inline: auto;
-  border-radius: 25px;
   border: 1px solid $clr-primary;  
-  transition: 2s ease-out;
+  transition: 1s ease-out;
 }
 .fonts{
   font-family: MyFont;

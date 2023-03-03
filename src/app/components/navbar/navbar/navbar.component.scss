@@ -4,6 +4,8 @@
 .primary-header{
     align-items: center;
     justify-content: space-between;
+    background:hsl(0 0% 100% /0.5);
+    color:#fff
 }
 .mobile-nav-toggle{
     display: none;
@@ -16,6 +18,9 @@
 }
 .primary-navigation a{
     text-decoration: none;
+}
+.primary-navigation a:hover{
+    text-decoration: underline;
 }
 .primary-navigation a > [aria-hidden="true"]{
     font-size: 700;

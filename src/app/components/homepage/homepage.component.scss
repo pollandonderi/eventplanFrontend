@@ -4,17 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     box-sizing: border-box;
-    
-    // overflow-x: hidden;
 }
-body{
-
-}
-html{
-    color-scheme: dark light;
-}
-
- 
 .start{
     background-image: url("/assets/alternative-back.jpg");
     width: 100%;
@@ -38,7 +28,6 @@ position:relative;
     z-index: 1;
     text-transform: uppercase;
     color: #ffff;
-    font-family: 'Avenir Next';
 font-style: normal;
 font-weight: 600;
 letter-spacing: 0.1em;
@@ -49,12 +38,6 @@ letter-spacing: 0.1em;
     align-items: center;
 }
 
-}
-#primarylogin{
-    z-index: 1;
-}
-.mainholder{
-    z-index: 1;
 }
 .mainholder{
     display: flex;
@@ -68,72 +51,10 @@ letter-spacing: 0.1em;
     width: 3rem;
     aspect-ratio: 1;
 }
-#svg{
-    width: 19.5rem;
-    aspect-ratio: 1;
-}
-.divided-evenly{
-    display: grid;
-}
-.divided-evenly-second{
-    display: grid;
-}
-.center1{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-.middle1{
-    
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-#svgeven{
-    place-content: center;
-    display: flex;
-}
-.centermobile{
-    display: flex;
-    place-content: center;
-}
 #paragraphs{
     margin-inline: 1.5em;
 }
-#seebutton2{
-    background-color: #f2f7f7;
-    text-transform: uppercase;
-    padding-inline: 2rem;
-    padding-block: 0.2rem;
-    text-decoration: none;
-    color: #000;
-    margin-inline: auto;
-    border-radius: 25px;
-    border: 1px solid #333;  
-}
-#seebutton:hover{
-background-color: #ffff;
-color: #39cdcc;
-transition: 2s ease-out;
-}
-#seebutton2:hover{
-background-color: #333;
-color: #39cdcc;
-transition: 2s ease-out;
-}
-.background-diagonal{
-    position: relative;
-    
-}
 
-
-.footpictures{
-    display: grid;
-   grid-template-columns: 1;
-   grid-template-rows: repeat(4,1fr);
-    background: #000;
-} 
 
 .imghere{
     width: 18rem;
@@ -153,11 +74,9 @@ transition: 2s ease-out;
 @media (min-width:35em) {
     .divided-evenly{
         grid-template-columns: 40% 1fr;
-        // gap: 1rem;
     }
     .divided-evenly-second{
         grid-template-columns: 1fr 40%;
-        // gap: 1rem;
     }
     .aboutus{
         display: grid;
