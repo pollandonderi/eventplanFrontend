@@ -63,6 +63,7 @@ gap: var(--gap, 1rem);
   color: #000;
   margin-inline: auto;
   border-radius: 25px;
+  border: 1px solid $clr-tertiary
 }
 .primary-button:hover{
   background-color: $clr-tertiary;
