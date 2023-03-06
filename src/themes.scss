@@ -1,0 +1,32 @@
+$clr-primary:#ED254E;
+$clr-secondary:#011936;
+$clr-tertiary:#465662;
+$clr-clear:#C2EABD;
+$clr-yeellow:#f9dc5c;
+$font-family:'proxima-nova';
+$gradients:linear-gradient(90deg, rgba(249,220,92,1) 1%, rgba(194,234,189,1) 18%, rgba(70,86,98,1) 47%, rgba(1,25,54,1) 88%) ;
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('./assets/Poppins/semibold.ttf');
+}
+@font-face {
+  font-family: 'MyHeadingFont';
+  src: url('./assets/Poppins/regular.ttf');
+}
+@font-face {
+  font-family: 'MyTextFont';
+  src: url('./assets/Poppins/extralight.ttf');
+}
+@font-face {
+  font-family: 'MyTextFont';
+  src: url('./assets/Poppins/extralight.ttf');
+}
+@font-face {
+  font-family: 'MyQuoteFont';
+  src: url('./assets/Poppins/mediumitalic.ttf');
+}
+@font-face {
+  font-family: 'MyPoemFont';
+  src: url('./assets/Poppins/bolditalic.ttf');
+}
