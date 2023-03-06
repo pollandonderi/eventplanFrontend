@@ -1,3 +1,4 @@
+@import 'src/styles.scss';
 *,
 *::before,
 *::after{
@@ -71,6 +72,28 @@ letter-spacing: 0.1em;
 .margin-custom{
     padding-bottom: 1rem;
 }
+#poems{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-inline:20rem ;
+    padding-block: 2rem;
+}
+.poemcaption{
+    display: flex;
+    float: right;
+    padding-inline: 1rem;
+}
+.poemTitle{
+    font-weight: 500;
+    
+}
+.poem{
+    font-family: myPoemFont;
+}
+.martop{
+    margin-top: 2rem;
+}
 @media (min-width:35em) {
     .divided-evenly{
         grid-template-columns: 40% 1fr;
@@ -96,6 +119,9 @@ letter-spacing: 0.1em;
     justify-content: center;
     align-items: center;
     position:relative;
+    }
+    #poems{
+        padding-inline: 6rem;
     }
     
 }

@@ -1,4 +1,4 @@
-
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
 $clr-primary:#ED254E;
 $clr-secondary:#011936;
 $clr-tertiary:#465662;
@@ -26,6 +26,10 @@ $gradients:linear-gradient(90deg, rgba(249,220,92,1) 1%, rgba(194,234,189,1) 18%
 @font-face {
   font-family: 'MyQuoteFont';
   src: url('./assets/Poppins/mediumitalic.ttf');
+}
+@font-face {
+  font-family: 'MyPoemFont';
+  src: url('./assets/Poppins/bolditalic.ttf');
 }
 .mainbody{
   margin: 0;
@@ -109,7 +113,6 @@ gap: var(--gap, 1rem);
 }
 @media (max-width:50em) {
   .overall-headings{
-    font-size: x-large;
     font-weight: 900;
     line-height: normal;
   }
