@@ -1,11 +1,5 @@
 @import 'src/themes.scss';
-*,
-*::before,
-*::after{
-    box-sizing: border-box;
-    margin: 0;
-    box-sizing: border-box;
-}
+
 .start{
     background-image: url("/assets/alternative-back.jpg");
     width: 100%;
@@ -81,8 +75,8 @@ letter-spacing: 0.1em;
 }
 .poemcaption{
     display: flex;
-    float: right;
-    padding-inline: 1rem;
+    justify-content: end;
+    padding-inline-end: 1rem;
 }
 .poemTitle{
     font-weight: 500;
@@ -121,7 +115,7 @@ letter-spacing: 0.1em;
     position:relative;
     }
     #poems{
-        padding-inline: 6rem;
+        padding-inline: 2rem;
     }
     
 }

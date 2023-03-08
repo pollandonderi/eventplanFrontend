@@ -21,6 +21,11 @@
     margin:13px;
     // height: 100%;
 }
+.paragraph{
+    font-size: medium;
+    // font-weight: 300;
+    font-family: MyTextFont;
+}
 @media (min-width:35em) {
     .card-display-even{
         grid-template-columns:  repeat(2, 1fr);

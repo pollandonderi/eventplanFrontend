@@ -39,6 +39,9 @@
 .marg1{
     padding: 1rem;
 }
+.borderRadius{
+    border-radius: 20px;
+}
 .wrapper1{
     background-color: $clr-yeellow;
     border-radius: 20px;
@@ -46,25 +49,18 @@
 .wrapper2{
     background-color: $clr-secondary;
     color: white;
-    border-radius: 20px;
-
 }
 .wrapper3{
     background: $clr-tertiary;
     color: white;
-    border-radius: 20px;
-
 }
 .wrapper4{
     background: $clr-clear;
     color: black;
-    border-radius: 20px;
-
 }
 .wrapper5{
-    background: $gradients;
-    color: black;
-    border-radius: 20px;
+    background-color: $clr-tertiary;
+    color: #fff;
 
 }
 

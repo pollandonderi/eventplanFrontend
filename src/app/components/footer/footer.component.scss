@@ -1,16 +1,15 @@
 @import 'src/themes.scss';
-.body{
-    color: #fff;
-}
 .footerdisplay{
     display: flex;
     flex-direction: column;
 
 }
+.foot{
+    color: #fff;
+    background: $clr-secondary;
+}
 .maincontainer{
     display: grid;
-    
-    background: $clr-secondary;
     border-top: 2px solid #fff;
 }
 .col1{
