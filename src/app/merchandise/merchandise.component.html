@@ -1,1 +1,28 @@
-<p>merchandise works!</p>
+ <!-- the api for products is at -->
+<div class="center">
+    <div class="margin">
+        <input type="text" placeholder="Enter name" class="padding"><fa-icon [icon]="faMagnifyingGlass"></fa-icon>
+    </div>
+    <div>
+        
+    </div>
+    
+</div>
+<div class="mainmerchandise">
+    <a routerLink="" *ngFor="let dataList of productData" class="mainlink">
+        <div class="card">
+            <div  class="center">
+                <img id="merchandiseimages"  class="center" src="{{dataList.url}}" alt="" srcset="" loading="lazy">
+            </div>
+            <div class="minicard">
+                
+                <h4 class="center">{{dataList.title}}</h4>
+                <div>
+                    <p></p>
+                </div>  
+            </div>
+        </div>
+    </a>
+   
+    
+</div>

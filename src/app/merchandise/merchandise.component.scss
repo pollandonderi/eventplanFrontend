@@ -1,0 +1,61 @@
+
+@import 'src/themes.scss';
+.mainmerchandise{
+    display: grid;
+}
+#merchandiseimages{
+    width: 22rem;
+    aspect-ratio: 1.4/1;
+    // border-radius: 3rem;
+    padding-inline: 2rem;
+}
+.minicard{
+    // background: black;
+    margin-inline: 4rem;
+    color:$clr-yeellow;
+    background-color: $clr-secondary;
+    border-radius: 2px;
+    transform: translateY(-1.1rem);
+}
+h4{
+    font-weight: 500;
+    font-size: larger;
+}
+a:hover{
+transform: scale(1.1);
+}
+.margin{
+    margin-block: 2rem;
+}
+.padding{
+    padding-right: 1rem;
+    border: none;
+    border-bottom: 1px solid $clr-secondary;
+    outline: none;
+}
+@media (min-width:35em) {
+    .mainmerchandise{
+        grid-template-columns: repeat(4,1fr);
+        padding-inline: 2rem;
+        gap: 1rem;
+    }
+    #merchandiseimages{
+        width: 18rem;
+        aspect-ratio: 1.4/1;
+        border-radius: 2px;
+        padding-inline: 2rem;
+    }
+}
+@media (max-width:60em) {
+    .mainmerchandise{
+        grid-template-columns: repeat(2,1fr);
+        padding-inline: 2rem;
+        gap: 1rem;
+    }
+    #merchandiseimages{
+        width: 18rem;
+        aspect-ratio: 1.4/1;
+        border-radius: 2px;
+        padding-inline: 2rem;
+    }
+}  

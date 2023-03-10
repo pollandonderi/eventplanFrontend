@@ -11,6 +11,7 @@ import { HomepageComponent } from './components/homepage/homepage.component';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { WhatexpectedComponent } from './whatexpected/whatexpected.component';
 import { GetinspiredComponent } from './getinspired/getinspired.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { GetinspiredComponent } from './getinspired/getinspired.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
