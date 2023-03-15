@@ -24,7 +24,6 @@
     "@fortawesome/free-brands-svg-icons": "^6.3.0",
     "@fortawesome/free-regular-svg-icons": "^6.3.0",
     "@fortawesome/free-solid-svg-icons": "^6.3.0",
-    "angular-alert-module": "^2.0.3",
     "font-proxima-nova-scss": "^1.0.1",
     "ngx-toastr": "^16.1.0",
     "rxjs": "~7.8.0",
