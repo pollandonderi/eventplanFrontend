@@ -1,0 +1,80 @@
+@import 'src/themes.scss';
+
+.maincontainer{
+    background: $clr-secondary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.formcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    height: 100vh;
+    color: #fff;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    max-width: 23rem;
+    margin-block: .5rem;
+    margin-inline: .2rem;
+}
+.marginend{
+    margin-inline: 2rem;
+    margin-top: .2rem;
+}
+.inputs{
+padding-inline: .8rem;
+padding-block: .4rem;
+border-radius: 10px;
+}
+.margincustomised{
+    margin-block: 2rem;
+}
+.yellow{
+    color: $clr-yeellow;
+}
+@media (min-width:35em) {
+    .yellow{
+        color: $clr-secondary;
+    }
+    .first{
+        display: flex;
+        flex-direction: column;
+        max-width: 23rem;
+        margin-block: .5rem;
+    }
+    .main{
+        width: 80%;
+        background-image: url('/assets/event1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        border-radius: 25px;
+        height: 90dvh;
+        height: 90vh;
+        
+    }
+    section{
+        border-radius: 25px;
+        width: 100%;
+        height: 100%;
+        color: $clr-secondary;
+        position: absolute;
+        background-image: linear-gradient(to right,#f9dc5cf5 25%, #f9dc5c86 50%,#f9dc5c52 75%, #f9dc5c00);
+    }
+    .outline{
+        outline: 1px solid $clr-secondary;
+    }
+    .first{
+        max-width: 23rem;
+        margin-block: .7rem;
+    }
+    .marginend{
+        margin-inline: 2rem;
+    }
+}

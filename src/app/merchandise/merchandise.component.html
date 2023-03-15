@@ -1,7 +1,8 @@
- <!-- the api for products is at -->
-<div class="center">
+
+
+<div class="justifyend">
     <div class="margin">
-        <input type="text" placeholder="Enter name" class="padding"><fa-icon [icon]="faMagnifyingGlass"></fa-icon>
+        <input type="text" placeholder="What are you looking for today?" class="padding form-control" [(ngModel)]="filteredString"><fa-icon [icon]="faMagnifyingGlass"></fa-icon>
     </div>
     <div>
         
@@ -9,7 +10,7 @@
     
 </div>
 <div class="mainmerchandise">
-    <a routerLink="" *ngFor="let dataList of productData" class="mainlink">
+    <a routerLink="{{dataList.url}}" *ngFor="let dataList of productData | filters:filteredString" class="mainlink">
         <div class="card">
             <div  class="center">
                 <img id="merchandiseimages"  class="center" src="{{dataList.url}}" alt="" srcset="" loading="lazy">

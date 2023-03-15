@@ -8,6 +8,7 @@ import { ProductsService } from '../services/products.service';
   styleUrls: ['./merchandise.component.scss']
 })
 export class MerchandiseComponent  implements OnInit{
+  filteredString:string="";
   faMagnifyingGlass = faMagnifyingGlass;
   productData:any;
   constructor(private _productsService: ProductsService){}

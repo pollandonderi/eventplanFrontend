@@ -1,11 +1,12 @@
+@import 'src/themes.scss';
 .logo{
     margin: .5rem;
 }
 .primary-header{
     align-items: center;
     justify-content: space-between;
-    background:hsl(0 0% 100% /0.5);
-    color:#fff
+    background:$clr-secondary;
+    // color:#fff
 }
 .mobile-nav-toggle{
     display: none;
@@ -18,14 +19,30 @@
 }
 .primary-navigation a{
     text-decoration: none;
+    color: #fff;
 }
 .primary-navigation a:hover{
-    text-decoration: underline;
+    text-decoration: none;
+    color: $clr-yeellow;
 }
 .primary-navigation a > [aria-hidden="true"]{
     font-size: 700;
     margin-inline-end: 0.75em;
 }
+li:last-child{
+    background: $clr-yeellow;
+    border-radius: 10rem;
+padding-inline: 1rem;
+}
+.primary-navigation a.active{
+    text-decoration: underline;
+    color: $clr-yeellow;
+}
+.black{
+    color: black;
+}
+
+
 @media (max-width:35em) {
     .primary-navigation{
         --gap:2em;
@@ -35,10 +52,18 @@
         z-index: 1000;
         flex-direction: column;
         padding: min(30vh, 10rem) 2em;
-        background: hsl(0 0% 100% /1);
+        background: hsla(224, 93%, 21%, 0.815);
         transition: transform 350ms ease-out;
         transform: translateX(100%);
+    
+    @supports (backdrop-filter: blur(.5rem)){
+        .primary-navigation{
+            background: hsl(0 0% 100% /0.5);
+            backdrop-filter: blur(1rem);
+    
+        }
     }
+}
     .mobile-nav-toggle{
         display: block;
         position: absolute;
@@ -65,13 +90,6 @@
     }
     .primary-navigation[data-visible="true"]{
         transform: translateX(0);
-    }
-}
-@supports (backdrop-filter: blur(.5rem)){
-    .primary-navigation{
-        background: hsl(0 0% 100% /0.5);
-        backdrop-filter: blur(1rem);
-
     }
 }
 @media (min-width:35em) and (max-width:55em) {

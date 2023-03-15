@@ -1,5 +1,11 @@
 
 @import 'src/themes.scss';
+.justifyend{
+    display: flex;
+    justify-content: end;
+    margin-right: 2rem;
+    
+}
 .mainmerchandise{
     display: grid;
 }
@@ -46,16 +52,16 @@ transform: scale(1.1);
         padding-inline: 2rem;
     }
 }
-@media (max-width:60em) {
-    .mainmerchandise{
-        grid-template-columns: repeat(2,1fr);
-        padding-inline: 2rem;
-        gap: 1rem;
-    }
-    #merchandiseimages{
-        width: 18rem;
-        aspect-ratio: 1.4/1;
-        border-radius: 2px;
-        padding-inline: 2rem;
-    }
-}  
+// @media (max-width:60em) {
+//     .mainmerchandise{
+//         grid-template-columns: repeat(2,1fr);
+//         padding-inline: 2rem;
+//         gap: 1rem;
+//     }
+//     #merchandiseimages{
+//         width: 18rem;
+//         aspect-ratio: 1.4/1;
+//         border-radius: 2px;
+//         padding-inline: 2rem;
+//     }
+// }  

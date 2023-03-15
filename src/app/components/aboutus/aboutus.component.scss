@@ -10,26 +10,19 @@
 .colorminiholder1{
 background: $clr-yeellow;
 color: black;
+margin-inline: 1rem;
 }
 .colorminiholder2{
 background: $clr-tertiary;
+margin-inline: 1rem;
 }
 .colorminiholder3{
 background: $clr-secondary;
+margin-inline: 1rem;
 }
 
-
-
-
-
-
-
-
-
-
 .maincontainer{
-    display: grid;
-    
+    display: grid; 
 }
 
 #number{
@@ -43,110 +36,75 @@ background: $clr-secondary;
     justify-content: center;
     align-items: center;
 }
-.statistics{
-    display: flex;
-    flex-direction: row;
-    background: #39cdcc;
-    border-radius: 20px;
-    margin-top: 1rem;
-    color: black;
-}
-.statistics1{
-    display:flex;
-    padding-inline: 0.5rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.maincontainercustomised{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#questionspad{
-    padding-inline: 2rem;
-}
-.questionsemail{
-    display: flex;
-    width: 18rem;
-    flex-direction: column;
-    padding-inline: auto;
-    // aspect-ratio: 1;
-    
-}
-.questionsemailcontainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#submitcontainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#submitcontainerbutton{
-    background-color: #39cdcc;
-    padding-inline: auto;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-block: 1rem;
-    cursor: pointer;
-}
-#submitcontainerbutton:hover{
-    background: #333;
-    color: #ffff;
-    transition: 2s ease-out;
-
-}
-.customised{
-    background: #39cdcc;
-}
-.second-svg{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.wordsfirst{
-    margin-block: 1rem;
-    margin-inline: 1rem;
-}
-#expertsexplain{
-    background-color: #fff;
-    
-    padding-inline: 1rem;
-    padding-block: .8rem;
-    color: #333;
-    text-transform: uppercase;
-    cursor: pointer;
-    
-}
 #images{
-    width: 70%;
-    height: 20rem;
+    width: 25rem;
+height: 15rem;
+border-radius: 12px;
 }
-
-.bg-dark{
-    background: #333;
-    color: #fff;
+#imagescustomised{
+    max-width: 20rem;
+    height: 20rem;
+    border-radius: 12px;
 }
 #m{
     padding-inline: 1rem;
 }
+#paramargin{
+    padding-inline:10rem ;
+    margin-block: 2rem;
+    font-family: myHeadingFont;
+}
+#paddingparagraphs{
+    padding: .3rem;
+}
+.bg-yellow{
+    background: url('/assets/event1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card{
+    background: #ffffff85;
+}
+.margincard{
+    margin-block: 1rem;
+}
+.paddingicon{
+    padding-right: 1rem;
+}
+.uppercontainer{
+    background: #ffffff85;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    margin-inline: .5rem;
+}
 @media (min-width:60em) {
+    #imagescustomised{
+    width: 32rem;
+    height: 25rem;
+    border-radius: 12px;
+}
     .maincontainer{
-        grid-template-columns: repeat(2,1fr);   
+        grid-template-columns: repeat(2, 1fr);   
     }
     #questionspad{
         padding-inline: 17rem;
     }
-    
+    .quote-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
 }
 @media (max-width:60em) {
     #images{
         width: 85%;
         height: 20rem;
+    }
+    #paramargin{
+        padding-inline:1rem ;
+        margin-block: 1rem;
+        font-family: myHeadingFont;
     }
 }
