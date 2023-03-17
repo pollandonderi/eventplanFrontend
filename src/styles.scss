@@ -53,19 +53,19 @@ gap: var(--gap, 1rem);
   font-family: MyFont;
 }
 .primary-button{
-  background-color:$clr-secondary;
+  background-color:$clr-yeellow;
   text-transform: uppercase;
   padding-inline: 2rem;
   padding-block: 0.5rem;
   text-decoration: none;
-  color: $clr-yeellow;
+  color: $clr-secondary;
   margin-inline: auto;
   border-radius: 25px;
-  border: 1px solid $clr-yeellow
+  border: 1px solid $clr-secondary;
 }
 .primary-button:hover{
-  background-color: $clr-yeellow;
-  color: $clr-secondary;
+  background-color: $clr-secondary;
+  color: $clr-yeellow;
   border: 1px solid $clr-yeellow;  
   transition: 1s ease-out;
 }

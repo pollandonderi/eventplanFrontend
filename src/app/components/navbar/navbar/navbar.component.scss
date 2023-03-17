@@ -67,9 +67,9 @@ padding-inline: 1rem;
     .mobile-nav-toggle{
         display: block;
         position: absolute;
-        top: 2rem;
+        top: 1.5rem;
         right: 2rem;
-        background: url('../../../../assets/menu.png');
+        background: url('../../../../assets/hamb3.png');
         width: 2rem;
         background-repeat: no-repeat;
         border: none;
@@ -79,9 +79,9 @@ padding-inline: 1rem;
     .mobile-nav-toggle[aria-expanded="true"]{
         display: block;
         position: absolute;
-        top: 2rem;
+        top: 1rem;
         right: 2rem;
-        background: url('../../../../assets/exit.png');
+        background: url('../../../../assets/exit2.png');
         width: 3rem;
         background-repeat: no-repeat;
         border: none;
