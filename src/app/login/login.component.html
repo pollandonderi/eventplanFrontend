@@ -1,18 +1,26 @@
 <div class="maincontainer formcenter">
     <div class="main">
         <section>
-            <form action="" class="marginend">
+            <form action="" class="marginend" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
                 <h3>Hello <fa-icon [icon]="smile"></fa-icon></h3>
                 <div>
                     <span><h2 class="overall-headings fonts"> Login now<span class="yellow">.</span></h2></span>
                 </div>
                 <div class="inputGroup first">
-                    <input class="inputs"  type="email" id="email" required>
+                    <input class="inputs"  type="email" id="email" required formControlName="email">
                     <label for="email">Your Email</label>
+                    <span class="text-danger"
+                                *ngIf="(registerFormControl['email'].touched || submitted) && registerFormControl['email'].errors?.['required']">
+                                Email is required
+                            </span>
                 </div>
                 <div class="inputGroup first">
-                    <input class="inputs" type="password" id="password" required>
+                    <input class="inputs" type="password" id="password" required formControlName="password">
                     <label for="password">password</label>
+                    <span class="text-danger"
+                    *ngIf="(registerFormControl['email'].touched || submitted) && registerFormControl['email'].errors?.['required']">
+                    password is required
+                </span>
                 </div>
                 <div class="margincustomised">
                     <a routerLink="" class="primary-button">Log in</a>

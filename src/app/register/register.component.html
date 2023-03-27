@@ -1,8 +1,10 @@
 <div class="maincontainer formcenter">
 <div class="main">
     <section>
-        <form action="" class="marginend">
-            <h3>Get started</h3>
+        <div class="back">
+            <a routerLink=""><fa-icon [icon]="faLeftLong"></fa-icon>back home</a>
+        </div>
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()"action="" class="marginend">
             <div>
                 <span><h2 class="overall-headings fonts">Create a new account<span class="yellow">.</span></h2></span>
             </div>
@@ -10,27 +12,68 @@
                 <p>already a member? <a routerLink="/login">Log in</a></p>
             </div>
             <div class="inputGroup first">
-                <input  class="inputs" type="text" id="firstName" required>
+                <input  class="inputs" type="text" id="firstName" formControlName="name" required>
                 <label for="firstName">Your Name</label>
+                <span class="text-danger"
+                                *ngIf="(registerFormControl['name'].touched || submitted) && registerFormControl['name'].errors?.['required']">
+                                Name is required
+                            </span>
             </div>
             <div class="inputGroup first">
-                <input class="inputs"  type="email" id="email" required>
+                <input class="inputs"  type="email" id="email" formControlName="email" required>
                 <label for="email">Your Email</label>
+                <span class="text-danger"
+                                *ngIf="(registerFormControl['email'].touched || submitted) && registerFormControl['name'].errors?.['required']">
+                                Email is required
+                            </span>
+                            <span class="text-danger"
+                                *ngIf="registerFormControl['email'].touched && registerFormControl['email'].errors?.['email']">
+                                Enter a valid email address
+                            </span>
             </div>
             <div class="inputGroup first">
-                <input class="inputs" type="number" id="phoneNumber" required>
+                <input class="inputs" type="text" id="username" required formControlName="username">
+                <label for="username">username</label>
+                <span class="text-danger"
+                *ngIf="(registerFormControl['username'].touched || submitted) && registerFormControl['username'].errors?.['required']">
+                User Name is required
+            </span>
+            <span class="text-danger"
+                *ngIf="registerFormControl['username'].touched && registerFormControl['username'].errors?.['userNameNotAvailable']">
+                User Name is not available
+            </span>
+            </div>
+            <div class="inputGroup first">
+                <input class="inputs" type="number" id="phoneNumber" required formControlName="phoneNumber">
                 <label for="phoneNumber">phone number</label>
+                <span class="text-danger"
+                *ngIf="registerFormControl['phoneNumber'].touched && registerFormControl['phoneNumber'].errors?.['required']">
+                Phone number required
+            </span>
             </div>
             <div class="inputGroup first">
-                <input class="inputs" type="password" id="password" required>
+                <input class="inputs" type="password" id="password" required formControlName="password">
                 <label for="password">password</label>
+                <span class="text-danger"
+                                *ngIf="(registerFormControl['password'].touched || submitted) && registerFormControl['password'].errors?.['required']">
+                                Password is required
+                            </span>
+                            <span class="text-danger"
+                                *ngIf="registerFormControl['password'].touched && registerFormControl['password'].errors?.['invalidPassword']">
+                                Password should have minimum 8 characters, at least 1 uppercase letter, 1 lowercase
+                                letter and 1 number
+                            </span>
             </div>
             <div class="inputGroup first">
-                <input class="inputs" type="passwordconfirm" id="passwordconfirm" required>
+                <input class="inputs" type="passwordconfirm" id="passwordconfirm" required formControlName="ConfirmPassword">
                 <label for="passwordconfirm"> Confirm password</label>
+                <span class="text-danger"
+                                *ngIf="registerFormControl['confirmPassword'].touched && registerFormControl['confirmPassword'].errors?.['passwordMismatch']">
+                                Passwords doesnot match
+                            </span>
             </div>
             <div class="margincustomised">
-                <a routerLink="" class="primary-button">Create account</a>
+                <button routerLink="" class="primary-button">Create account</button>
             </div>
             
         </form>

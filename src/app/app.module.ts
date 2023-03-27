@@ -31,7 +31,7 @@ import { HttpClientModule } from '@angular/common/http';
     FontAwesomeModule,
     HttpClientModule
   ],
-  exports:[NavbarComponent],
+  exports:[NavbarComponent, FontAwesomeModule,],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,5 +1,9 @@
 @import 'src/themes.scss';
-
+.back{
+    display: flex;
+float: right;
+padding-right: 1rem;
+}
 .maincontainer{
     background: $clr-secondary;
     display: flex;
@@ -55,8 +59,8 @@ border-radius: 10px;
         background-repeat: no-repeat;
         position: relative;
         border-radius: 25px;
-        height: 90dvh;
-        height: 90vh;
+        height: 93dvh;
+        height: 93vh;
         
     }
     section{

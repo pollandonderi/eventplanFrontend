@@ -14,7 +14,6 @@ export class MerchandiseComponent  implements OnInit{
   constructor(private _productsService: ProductsService){}
   ngOnInit(): void {
     this._productsService.getdata().subscribe(res=>{
-      console.log(res)
       this.productData=res
     })
   }
