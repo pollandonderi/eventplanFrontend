@@ -1,5 +1,20 @@
 
 @import 'src/themes.scss';
+.primary-header{
+    
+    background-color: $clr-secondary;
+}
+.content-in{
+    margin-inline: 1.5rem;
+    margin-top: 1rem;
+}
+.headcss{
+    display: flex;
+    justify-content: space-between;
+}
+.bg-secondary{
+    color: $clr-secondary;
+}
 .justifyend{
     display: flex;
     justify-content: end;

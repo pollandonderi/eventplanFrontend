@@ -18,7 +18,8 @@ import { FiltersPipe } from './filters.pipe';
     MerchandiseRoutingModule,
     FontAwesomeModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    
   ]
 })
 export class MerchandiseModule { }

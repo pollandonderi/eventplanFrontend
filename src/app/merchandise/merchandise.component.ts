@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
-import { ProductsService } from '../services/products.service';
+import { faCartPlus, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+// import { ProductsService } from '../services/products.service';
 
 @Component({
   selector: 'app-merchandise',
@@ -8,14 +8,13 @@ import { ProductsService } from '../services/products.service';
   styleUrls: ['./merchandise.component.scss']
 })
 export class MerchandiseComponent  implements OnInit{
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
+  faCartPlus = faCartPlus;
   filteredString:string="";
   faMagnifyingGlass = faMagnifyingGlass;
   productData:any;
-  constructor(private _productsService: ProductsService){}
-  ngOnInit(): void {
-    this._productsService.getdata().subscribe(res=>{
-      this.productData=res
-    })
-  }
+  
 
 }

@@ -1,4 +1,13 @@
-
+<header class="primary-header headcss">
+    <div class="content-in">
+        <a routerLink=""><img class="logo" src="../assets/logo6.png" width="100px" height="50px" alt="" srcset=""></a>
+    </div>
+    <div class="content-in">
+        <button  routerLink="./shop" class="primary-button"><fa-icon [icon]="faCartPlus"></fa-icon> Visit Shop</button>
+    </div>
+    
+</header>
+<h2 class="center bg-secondary">categories on offer</h2>
 
 <div class="justifyend">
     <div class="margin">
@@ -17,7 +26,7 @@
             </div>
             <div class="minicard">
                 
-                <a class="center">{{dataList.title}}</a>
+                <a  routerLink="./shop" class="center">{{dataList.title}}</a>
                 <div>
                     <p></p>
                 </div>  

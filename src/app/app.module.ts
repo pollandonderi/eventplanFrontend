@@ -12,6 +12,10 @@ import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { WhatexpectedComponent } from './whatexpected/whatexpected.component';
 import { GetinspiredComponent } from './getinspired/getinspired.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ShopComponent } from './shop/shop.component';
+import { ShopnavigationComponent } from './components/navbar/shopnavigation/shopnavigation.component';
+import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +27,10 @@ import { HttpClientModule } from '@angular/common/http';
     HomepageComponent,
     AboutusComponent,
     WhatexpectedComponent,
-    GetinspiredComponent
+    GetinspiredComponent,
+    ShopComponent,
+    ShopnavigationComponent,
+    ProductAlertsComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +38,7 @@ import { HttpClientModule } from '@angular/common/http';
     FontAwesomeModule,
     HttpClientModule
   ],
-  exports:[NavbarComponent, FontAwesomeModule,],
+  exports:[NavbarComponent, FontAwesomeModule,ShopnavigationComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

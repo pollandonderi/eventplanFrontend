@@ -14,7 +14,7 @@ return value;
       if (dataList['title'] === filteredString){
         productData.push(dataList)
       }else{
-       //create an ngx alert popup to the user or borrow inspiration on how to do this
+      //  window.alert("no product with that name found!")
       }
 
     }
