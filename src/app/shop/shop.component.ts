@@ -1,17 +1,28 @@
-import { Component } from '@angular/core';
-import { products } from './products';
+import { Component, OnInit } from '@angular/core';
+import { Product, products } from './products';
 import { FiltersPipe } from '../merchandise/filters.pipe';
+import { CartService } from '../services/cart.service';
 
 @Component({
   selector: 'app-shop',
   templateUrl: './shop.component.html',
   styleUrls: ['./shop.component.scss']
 })
-export class ShopComponent {
+export class ShopComponent implements OnInit{
   products = products;
 
   share() {
     window.alert('The product has been shared!');
+  }
+  addToCart(product: Product) {
+    this.cartService.addToCart(product);
+    window.alert('Your product has been added to the cart!');
+  }
+  constructor(
+    private cartService: CartService
+  ) { }
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
   }
 
 }

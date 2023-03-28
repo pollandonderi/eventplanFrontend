@@ -1,7 +1,9 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes,PreloadAllModules } from '@angular/router';
+import { CartComponent } from './cart/cart.component';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
+import { ShippingComponent } from './shipping/shipping.component';
 import { ShopComponent } from './shop/shop.component';
 
 const routes: Routes = [
@@ -14,6 +16,14 @@ const routes: Routes = [
 },{
 path:"shop",
 component:ShopComponent
+},
+{
+  path:"cart",
+  component:CartComponent
+},
+{
+  path:"shippingCosts",
+  component:ShippingComponent
 },
   { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule) },
   { path: 'register', loadChildren: () => import('./register/register.module').then(m => m.RegisterModule) },

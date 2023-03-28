@@ -15,6 +15,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ShopComponent } from './shop/shop.component';
 import { ShopnavigationComponent } from './components/navbar/shopnavigation/shopnavigation.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
+import { CartComponent } from './cart/cart.component';
+import { ShippingComponent } from './shipping/shipping.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
     GetinspiredComponent,
     ShopComponent,
     ShopnavigationComponent,
-    ProductAlertsComponent
+    ProductAlertsComponent,
+    CartComponent,
+    ShippingComponent
   ],
   imports: [
     BrowserModule,
