@@ -1,0 +1,30 @@
+@import 'src/themes.scss';
+
+.cartItem{
+    background: $clr-secondary;
+    color: $clr-yeellow;
+    
+}
+.inputs{
+padding-inline: .8rem;
+padding-block: .4rem;
+border-radius: 10px;
+}
+.grid{
+    display: grid;
+    gap: 1rem;
+    margin-inline: 1rem;
+}
+.submitButton{
+    margin-block: 2rem;
+}
+@media (min-width:40em) {
+    .grid{
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width:60em) {
+    .grid{
+    grid-template-columns: repeat(3, 1fr);
+    }
+}

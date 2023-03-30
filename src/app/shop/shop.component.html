@@ -21,6 +21,9 @@
       <p *ngIf="product.description">Description: {{ product.description }}</p>
     </div>
     <div class="center">
+      <p *ngIf="product.price">Price: {{ product.price }}</p>
+    </div>
+    <div class="center">
       <app-product-alerts [product]="product"> </app-product-alerts>
     </div>
     <div class="buttonsShop">

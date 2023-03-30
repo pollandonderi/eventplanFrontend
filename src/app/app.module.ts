@@ -17,6 +17,7 @@ import { ShopnavigationComponent } from './components/navbar/shopnavigation/shop
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -35,12 +36,14 @@ import { ShippingComponent } from './shipping/shipping.component';
     ProductAlertsComponent,
     CartComponent,
     ShippingComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   exports:[NavbarComponent, FontAwesomeModule,ShopnavigationComponent],
   providers: [],
