@@ -1,14 +1,269 @@
 [
-  {
-    "type": "Overnight",
-    "price": 25.99
-  },
-  {
-    "type": "2-Day",
-    "price": 9.99
-  },
-  {
-    "type": "Postal",
-    "price": 2.99
-  }
+    {
+"id":"1",
+"title":"Baringo County",
+"fee":"128"
+},
+    {
+"id":"2",
+"title":"Bomet County",
+"fee":"128"
+},
+    {
+"id":"3",
+"title":"Bungoma County",
+"fee":"128"
+},
+    {
+"id":"4",
+"title":"Busia County",
+"fee":"128"
+},
+    {
+"id":"5",
+"title":"Elgeyo Marakwet County",
+"fee":"128"
+},
+    {
+"id":"6",
+"title":"Embu County",
+"fee":"128"
+},
+    {
+"id":"7",
+"title":"Garissa County",
+"fee":"128"
+},
+    {
+"id":"8",
+"title":"Homa Bay County",
+"fee":"128"
+},
+    {
+"id":"9",
+"title":"Isiolo County",
+"fee":"128"
+},
+    {
+"id":"10",
+"title":"Kajiado County",
+"fee":"128"
+},
+    {
+"id":"11",
+"title":"Kakamega County",
+"fee":"128"
+},
+    {
+"id":"12",
+"title":"Kericho County",
+"fee":"128"
+},
+    {
+"id":"13",
+"title":"Kiambu County",
+"fee":"128"
+},
+    {
+"id":"14",
+"title":"Kilifi County",
+"fee":"212"
+},
+    {
+"id":"15",
+"title":"Kirinyaga County",
+"fee":"212"
+},
+    {
+"id":"16",
+"title":"Kisii County",
+"fee":"212"
+},
+    {
+"id":"17",
+"title":"Kisumu County",
+"fee":"212"
+},
+    {
+"id":"18",
+"title":"Kitui County",
+"fee":"212"
+},
+    {
+"id":"19",
+"title":"Kwale County",
+"fee":"212"
+},
+    {
+"id":"20",
+"title":"Laikipia County",
+"fee":"212"
+},
+    {
+"id":"21",
+"title":"Lamu County",
+"fee":"139"
+}
+,
+    {
+"id":"22",
+"title":"Machakos County",
+"fee":"139"
+}
+,
+    {
+"id":"23",
+"title":"Machakos County",
+"fee":"139"
+}
+,
+    {
+"id":"24",
+"title":"Mandera County",
+"fee":"139"
+}
+,
+    {
+"id":"25",
+"title":"Meru County",
+
+
+
+"fee":"-"
+}
+,
+    {
+"id":"26",
+"title":"Migori County",
+"fee":"-"
+}
+,
+    {
+"id":"27",
+"title":"Mombasa County",
+"fee":"-"
+}
+,
+    {
+"id":"28",
+"title":"Murang’a County",
+"fee":"-"
+}
+,
+    {
+"id":"29",
+"title":"Nairobi County",
+"fee":"45"
+}
+,
+    {
+"id":"30",
+"title":"Nakuru County",
+"fee":"97"
+}
+,
+    {
+"id":"31",
+"title":"Nandi County",
+"fee":"97"
+}
+,
+    {
+"id":"32",
+"title":"Narok County",
+"fee":"97"
+}
+,
+    {
+"id":"33",
+"title":"Nyamira County",
+"fee":"97"
+}
+,
+    {
+"id":"34",
+"title":"Nyandarua County",
+"fee":"97"
+}
+,
+    {
+"id":"34",
+"title":"Nyeri County",
+"fee":"-"
+}
+,
+    {
+"id":"35",
+"title":"Samburu County",
+"fee":"227"
+}
+,
+    {
+"id":"36",
+"title":"Taita Taveta County",
+"fee":"227"
+}
+,
+    {
+"id":"37",
+"title":"Nyeri County",
+"fee":"227"
+}
+,
+    {
+"id":"38",
+"title":"Tana River County",
+"fee":"227"
+}
+,
+    {
+"id":"39",
+"title":"Tharaka Nithi County",
+
+
+
+"fee":"227"
+}
+,
+    {
+"id":"40",
+"title":"Trans Nzoia County",
+"fee":"120"
+}
+,
+    {
+"id":"41",
+"title":"Turkana County",
+"fee":"120"
+}
+,
+    {
+"id":"42",
+"title":"Uasin Gishu County",
+"fee":"-"
+}
+,
+    {
+"id":"43",
+"title":"Vihiga County",
+"fee":"200"
+}
+,
+    {
+"id":"44",
+"title":"Wajir County",
+"fee":"22000"
+}
+,
+    {
+"id":"45",
+"title":"West Pokot County",
+"fee":"240"
+}
 ]
+
+
+
+
+
+

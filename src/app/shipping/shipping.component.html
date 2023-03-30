@@ -1,5 +1,17 @@
+<app-shopnavigation></app-shopnavigation>
+<div class="justifyend">
+    <div class="margincust1">
+        <input type="text" placeholder="Please search for your county here." class="paddingcust1 form-control"><fa-icon [icon]="faMagnifyingGlass"></fa-icon>
+    </div>
+    <div>
+        
+    </div>
+    
+</div>
+<div class="shippingContainer">
+    <div *ngFor="let shipping of shippingPrice " class="shippingContainerinner">
+        <p class="data"><fa-icon [icon]="faLocationPin"></fa-icon> : {{shipping.title}}</p>
+        <div class="data"><fa-icon [icon]="handHoldingDollar"></fa-icon> : {{shipping.fee}}</div>
+    </div>
+</div>
 
-<div class="shipping-item" *ngFor="let shipping of shippingCosts | async">
-    <span>{{ shipping.type }}</span>
-    <span>{{ shipping.price | currency }}</span>
-  </div>

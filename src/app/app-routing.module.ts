@@ -22,7 +22,7 @@ component:ShopComponent
   component:CartComponent
 },
 {
-  path:"shippingCosts",
+  path:"shipping",
   component:ShippingComponent
 },
   { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule) },

@@ -1,25 +1,37 @@
 <app-shopnavigation></app-shopnavigation>
-<h2 class="center bg-secondary">categories on offer</h2>
-
-
-<div *ngFor="let product of products">
-
-  <h3>
-    <a [title]="product.name + ' details'">
-      {{ product.name }}
-    </a>
-  </h3>
-
-  <p *ngIf="product.description">
-    Description: {{ product.description }}
-  </p>
-
-  <button type="button" class="primary-button" (click)="share()">
-    Share
-  </button>
-  <button class="primary-button" type="button" (click)="addToCart(product)">Buy</button>
-  <app-product-alerts
-  [product]="product">
-</app-product-alerts>
-
+<h2 class="center bg-secondary margin1">Check out for "offer"tags</h2>
+<div class="center margin">
+  <h5>
+    Shipping costs to be incurred.
+    <a routerLink="/shipping">check out our shipping fees</a>
+  </h5>
 </div>
+<div class="cards">
+  <div *ngFor="let product of products" class="element">
+    <div class="center">
+      <img class="imgcustomised" src="{{ product.url }}" alt="">
+      <!-- <p *ngIf="product.url">Description: {{ product.url }}</p> -->
+    </div>
+    <h3 class="center">
+      <a [title]="product.name + ' details'">
+        {{ product.name }}
+      </a>
+    </h3>
+    <div class="center">
+      <p *ngIf="product.description">Description: {{ product.description }}</p>
+    </div>
+    <div class="center">
+      <app-product-alerts [product]="product"> </app-product-alerts>
+    </div>
+    <div class="buttonsShop">
+      <button type="button" class="primary-button" (click)="share()">
+        Share
+      </button>
+      <button class="primary-button" type="button" (click)="addToCart(product)">
+        Buy
+      </button>
+    </div>
+    
+  </div>
+</div>
+

@@ -34,7 +34,7 @@ import { ShippingComponent } from './shipping/shipping.component';
     ShopnavigationComponent,
     ProductAlertsComponent,
     CartComponent,
-    ShippingComponent
+    ShippingComponent,
   ],
   imports: [
     BrowserModule,

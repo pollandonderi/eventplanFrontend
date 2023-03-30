@@ -1,0 +1,42 @@
+@import 'src/themes.scss';
+.margincust1{
+    margin-block: 2rem;
+}
+.paddingcust1{
+    padding-right: 1rem;
+    border: none;
+    border-bottom: 1px solid $clr-secondary;
+    outline: transparent;
+}
+.shippingContainer{
+    display: grid;
+    margin-inline: 2rem;
+    gap: 1rem;
+}
+.shippingContainerinner{
+   
+    background: $clr-secondary;
+    color: $clr-yeellow;
+    border-radius: 10px;
+}
+.data{
+    margin-left: 1rem;
+}
+@media (min-width:23em) {
+    .shippingContainer{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+@media (min-width:35em) {
+    .shippingContainer{
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+}
+@media (min-width:45em) {
+    .shippingContainer{
+        grid-template-columns: repeat(5,1fr);
+    }
+    
+}

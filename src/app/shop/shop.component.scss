@@ -1,0 +1,40 @@
+.margin1{
+    margin-block:.3rem;
+}
+.margin{
+    margin-block: 1.5rem;
+}
+.buttonsShop{
+    display: flex;
+    flex-direction: row;
+    margin-block: .5rem;
+}
+.cards{
+    display: grid;
+    gap: 1rem;
+   margin-inline: 2rem;
+}
+.element{
+    background: beige;
+    border-radius: 10px;
+}
+.imgcustomised{
+    height: 12rem;
+    width: 100%;
+}
+
+@media screen and (min-width:30em) {
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+        margin-inline: 2rem;
+    }
+    
+}
+@media screen and (min-width:55em) {
+    .cards{
+        grid-template-columns: repeat(3, 1fr);
+        margin-inline: 8rem;
+    }
+    
+}
+

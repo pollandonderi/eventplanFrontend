@@ -21,7 +21,8 @@ export class CartService {
     return this.items;
   }
   getShippingPrices() {
-    return this.http.get<{type: string, price: number}[]>('/data/shipping.json');
+    return this.http.get<{type: string, price: number}[]>('data/shipping.json');
+
   }
 
   constructor(

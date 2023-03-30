@@ -1,15 +1,12 @@
 <div class="maincontainer formcenter">
 <div class="main">
     <section>
-        <div class="back">
-            <a routerLink=""><fa-icon [icon]="faLeftLong"></fa-icon>back home</a>
-        </div>
         <form [formGroup]="registerForm" (ngSubmit)="onSubmit()"action="" class="marginend">
             <div>
                 <span><h2 class="overall-headings fonts">Create a new account<span class="yellow">.</span></h2></span>
             </div>
             <div>
-                <p>already a member? <a routerLink="/login">Log in</a></p>
+                <p>already a member? <a routerLink="/login">Log in</a> or   <a routerLink="">back home</a></p>
             </div>
             <div class="inputGroup first">
                 <input  class="inputs" type="text" id="firstName" formControlName="name" required>

@@ -14,7 +14,6 @@ export class AboutusComponent implements OnInit{
   constructor(private _ceomessageservice: CeomessagesService){}
   ngOnInit(): void {
     this._ceomessageservice.getmessages().subscribe(res=>{
-      console.log(res)
       this.ceoMessages=res
     })
   }

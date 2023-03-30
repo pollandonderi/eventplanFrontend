@@ -22,7 +22,7 @@ export class ShopComponent implements OnInit{
     private cartService: CartService
   ) { }
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    
   }
 
 }

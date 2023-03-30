@@ -82,6 +82,15 @@ gap: var(--gap, 1rem);
 .paddingconst{
   padding-block: 1rem;
 }
+.yellow{
+  color: $clr-yeellow;
+}
+.justifyend{
+  display: flex;
+  justify-content: end;
+  margin-right: 2rem;
+  
+}
 @media (max-width:50em) {
   .overall-headings{
     font-weight: 900;
