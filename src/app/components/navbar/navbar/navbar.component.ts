@@ -17,7 +17,6 @@ const navMobile = document.querySelector('.mobile-nav-toggle');
 
 navMobile?.addEventListener('click', () =>{
   const visibility = primaryNav?.getAttribute("data-visible");
-  console.log(visibility)
 
   if (!visibility ||(visibility === "false")){
     primaryNav?.setAttribute("data-visible", "true");

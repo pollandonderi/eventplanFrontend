@@ -10,13 +10,14 @@ import { CartService } from '../services/cart.service';
 })
 export class ShopComponent implements OnInit{
   products = products;
-
+  count = 0;
   share() {
     window.alert('The product has been shared!');
   }
   addToCart(product: Product) {
     this.cartService.addToCart(product);
     window.alert('Your product has been added to the cart!');
+
   }
   constructor(
     private cartService: CartService

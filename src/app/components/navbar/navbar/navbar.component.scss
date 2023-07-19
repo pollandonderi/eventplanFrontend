@@ -1,11 +1,11 @@
-@import 'src/themes.scss';
+// @import 'src/themes.scss';
 .logo{
     margin: .5rem;
 }
 .primary-header{
     align-items: center;
     justify-content: space-between;
-    background:$clr-secondary;
+    background:#011936;
     // color:#fff
 }
 .mobile-nav-toggle{
@@ -23,27 +23,25 @@
 }
 .primary-navigation a:hover{
     text-decoration: none;
-    color: $clr-yeellow;
+    color: #f9dc5c;
 }
 .primary-navigation a > [aria-hidden="true"]{
     font-size: 700;
     margin-inline-end: 0.75em;
 }
 li:last-child{
-    background: $clr-yeellow;
+    background: #f9dc5c;
     border-radius: 10rem;
 padding-inline: 1rem;
 }
 .primary-navigation a.active{
     text-decoration: underline;
-    color: $clr-yeellow;
+    color: #f9dc5c;
 }
 .black{
     color: black;
 }
-
-
-@media (max-width:35em) {
+@media (max-width:75em) {
     .primary-navigation{
         --gap:2em;
         position: fixed;
